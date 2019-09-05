@@ -6,6 +6,11 @@ def fib1( n : Int) : Int = n match {
 }
 
 
+val fibs: Stream[Int] = 0 #:: fibs.scanLeft(1)(_ + _)
+scala> fibs take 10 toList
+res42: List[Int] = List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
+
+
 //2da Forma
 def fib2( n : Int ) : Int = {
   var a = 0
