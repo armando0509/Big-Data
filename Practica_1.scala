@@ -91,22 +91,13 @@ Num2: Int = 3
 
 
 
+scala> val tupla = ((2,4,5),(1,2,3),(3.1416,23))
+tupla: ((Int, Int, Int), (Int, Int, Int), (Double, Int)) = ((2,4,5),(1,2,3),(3.1416,23))
 
-scala> val Num=1
-Num: Int = 1
+scala> tupla
+res9: ((Int, Int, Int), (Int, Int, Int), (Double, Int)) = ((2,4,5),(1,2,3),(3.1416,23))
 
-scala> Num1=2
-<console>:25: error: not found: value Num1
-val $ires6 = Num1
-             ^
-<console>:23: error: not found: value Num1
-       Num1=2
-       ^
+scala> println(tupla._3._1)
+3.1416
 
-scala> var Num2=2
-Num2: Int = 2
-
-scala> var Num2=3
-Num2: Int = 3
-
-
+scala> 
