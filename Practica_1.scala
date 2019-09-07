@@ -1,4 +1,4 @@
-  // Practica 1
+  // Practica 1 Ocegueda
 
 //1. Desarrollar un algoritmo en scala que calcule el radio de un circulo
 
