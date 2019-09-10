@@ -17,7 +17,7 @@ countMin += 1
  }
 }
 var MyList = List(countMax,countMin)  // se crea  una variable MyList  para obtener el registro del conteo del Mayor y Menor numero de veces que rompio sus records
-return MyList  // se regresa el resultado
+return MyList        // se regresa el resultado de la variable MyList
 }
 var totalgames = 9 // variable con el total de numero de juegos
 var games = Array(10,5,20,20,4,5,2,25,1)    // variables Games que muestran los numeros respectivos de score 
