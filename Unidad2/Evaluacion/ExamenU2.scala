@@ -1,4 +1,4 @@
-// Ocegudea Meraz Armando # 14212337 Examen Unidad 2 Datos Masivos
+// Ocegueda Meraz Armando # 14212337 Examen Unidad 2 Datos Masivos
 
 
 // # 1. Comienza una simple sesion Spark 
