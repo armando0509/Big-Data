@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().getOrCreate()
 
 // # 2. Cargue el archivo Netflix Stock CSV, haga que Spark infiera los tipos de datos
-val df = spark.read.option("header", "true").option("inferSchema","true")csv("/home/armando/Escritorio/Datos Masivos/Unidad2/Netflix_2011_2016.csv")
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("/home/armando/Escritorio/Datos Masivos/Unidad1/Netflix_2011_2016.csv")
 
 // # 3. ¿Cuáles son los nombres de las columnas?
 df.columns
