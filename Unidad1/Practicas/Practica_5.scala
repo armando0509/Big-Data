@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 val spark = SparkSession.builder().getOrCreate()
 
-val df = spark.read.option("header", "true").option("inferSchema","true")csv("BigData/Spark_DataFrame/Sales.csv")
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("/home/armando/Escritorio/BigData-master/Spark_DataFrame/Sales.csv")
 
 df.printSchema()
 
@@ -15,12 +15,9 @@ df.show()
 df.groupBy("Company").mean().show()     //Saca la media de cada compania
 // # 2
 df.groupBy("Company").count().show()    //En esta funcion nos mostrara los valores no nulos que contiene cada grupo de la columna company
-// # 3
+// # 3 '''''''''''''''''''''''''''\''
 df.groupBy("Company").max().show()      // En esta funcion nos Mostrara e el valor maximo que contiene cada grupo de la columna Company
-// # 4
-df.groupBy("Company").min().show()      //Aqui nos mostrar el valor minimo que contiene cada grupo de la comlumna Company
-// # 5
-df.groupBy("Company").sum().show()     //En la funcion sum nos retornara  la suma total de cada grupo que contiene la columna Company
+//=]]=]]]("Company").sum().show()     //En la funcion sum nos retornara  la suma total de cada grupo que contiene la columna Company
 // # 6
 df.groupBy($"Sales").avg(10).show     //En esta funcion nos mostrara el valor medio de cada columna numérica para cada grupo.
 // # 7
