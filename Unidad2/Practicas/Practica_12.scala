@@ -5,7 +5,7 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 
 // Load the data stored in LIBSVM format as a DataFrame.
 val data = spark.read.format("libsvm")
-  .load("/home/armando/Escritorio/spark-2.0.2-bin-hadoop2.7/data/mllib")
+  .load("/armando/Escritorio/spark-3.0.0-preview-bin-hadoop2.7/data/mllib")
 
 // Split the data into train and test
 val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
