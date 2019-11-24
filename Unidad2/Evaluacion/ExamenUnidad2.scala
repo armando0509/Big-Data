@@ -49,9 +49,17 @@ dataset2.columns
 val splits = dataset2.randomSplit(Array(0.6, 0.4), seed = 1234L)
     val train = splits(0)
     val test = splits(1)
-
+// Capa de neuronas 
 val layers = Array[Int](4, 5, 4, 3)
 val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setLabelCol("label").setFeaturesCol("features").setPredictionCol("prediction").setBlockSize(128).setSeed(1234L).setMaxIter(100)
+
+setLayers(neuronas).
+ setLabelCol("label").
+ setFeaturesCol("features").
+ setPredictionCol("prediction").
+ setBlockSize(128).
+ setSeed(1234L).
+ setMaxIter(100)
 
 val pipeline = new Pipeline().setStages(Array(labelIndexer,featureIndexer,trainer))
 val model = pipeline.fit(train)
