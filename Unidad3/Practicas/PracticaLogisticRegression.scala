@@ -1,4 +1,4 @@
-
+// Ocegueda Meraz Armando # 14212337 
 // Proyecto de regresion logistica /////
 ////////////////////////////////////////////
 
