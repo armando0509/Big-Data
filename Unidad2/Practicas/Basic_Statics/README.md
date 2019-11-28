@@ -65,14 +65,12 @@ Realizamos una importacion de:</br>
  <br>val df = data.toDF ("etiqueta", "caracteristicas") </br>
  <br>Funcion de prueba de invocacion de la clase ChiSquareTest: Realice la prueba de independencia de Pearson para cada caracteristica contra la etiqueta. Para cada caracteristica, los pares (caracteristica, etiqueta) verifique en una matriz de contingencia para la cualidad calcular la estadistica Chi-cuadrado. Todos los valores de etiquetas y caracteristicas deben ser categoricos. La hipotesis nula es que la aparicipn de los resultados es estadisticamente independiente.</br>
 
-<br> &bull;   <b>
- Parametros:  </br> <b>
- conjunto de datos- DataFrame de etiquetas categoricas y caracteristicas categoricas. Las caracteristicas con valor real se trataron como categorias para cada valor distinto. </br>
+<br> <b> &bull;  Parametros:  </br> </b>
+ <br> conjunto de datos- DataFrame de etiquetas categoricas y caracteristicas categoricas. Las caracteristicas con valor real se trataron como categorias para cada valor distinto. </br>
 
 
-<br> <b>
- Devoluciones: </b></br>
-  DataFrame que contiene el resultado de la prueba para cada caracteristica contra la etiqueta. Este DataFrame contiene una fila unica con los siguientes campos: - pValues: Vector - degreesOfFreedom: Array [Int] - estadisticas: Vector Cada uno de estos campos tiene un valor por caracteristica.</br>
+<br> <b> &bull; Devoluciones: </b></br>
+  <br> DataFrame que contiene el resultado de la prueba para cada caracteristica contra la etiqueta. Este DataFrame contiene una fila unica con los siguientes campos: - pValues: Vector - degreesOfFreedom: Array [Int] - estadisticas: Vector Cada uno de estos campos tiene un valor por caracteristica.</br>
 
 <br>val chi = ChiSquareTest.test (df, "caracteristicas", "etiqueta"). head
 Finalmente imprimimos los resultados del algoritmo:</br>
@@ -100,6 +98,7 @@ Finalmente imprimimos los resultados del algoritmo:</br>
 Realizamos una importacion de:</br>
 
 <br>import spark.implicits._ implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones. implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.</br>
+
 <br>Importar resumen ._ Herramientas para estadisticas vectorizadas en vectores MLlib. Los metodos en este paquete tienen varias estadisticas para los vectores contenidos dentro de DataFrames.</br>
 <br>La declaracion de los vectores densos esta respaldada por una matriz doble que representa sus valores de entrada. val data = Seq ( (Vectors.dense (2.0, 3.0, 5.0), 1.0), (Vectors.dense (4.0, 6.0, 7.0), 2.0) )</br>
 
