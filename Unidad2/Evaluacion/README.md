@@ -62,7 +62,7 @@ dataset2.columns</br>
     <br>val test = splits(1)</br>
 
 <br><b> &bull; Aqui eas donde se muestra a detalle la capa de red neuronal de la siguiente manera:</br></b>
-<br><b> &bull; En la la capa de entrada será de tamaño con 4 características, dos capas oculta de tamaño 5 y 4, y así tendremos una salida de tamaño de 3 clases.</br></b>
+<br> & En la la capa de entrada será de tamaño con 4 características, dos capas oculta de tamaño 5 y 4, y así tendremos una salida de tamaño de 3 clases.</br>
 <br>val layers = Array[Int](4, 5, 4, 3)</br>
 
 <br><b> &bull; creamos el entrenador multilayerPercptronClassifier y establecimiento de sus parámetros.</br></b>
@@ -77,8 +77,9 @@ dataset2.columns</br>
 <br><b> &bull;  Aqui es donde se calcula la predicción con la muestra del conjunto de prueba.</br></b>
 <br>val result = model.transform(test)</br>
 
-<br><b> &bull;  Aqui se imprime los resultados del cálculo del conjunto de prueba con un result.show().
-result.show()</br></b>
+<br><b> &bull;  Aqui se imprime los resultados del cálculo del conjunto de prueba con un result.show().</br></b>
+
+<br>result.show()</br>
 
 <br><b> &bull;  Este es la evaluación del modelo para el rendimiento de predicción del algoritmo.</br></b>
 <br>val predictionAndLabels = result.select("prediction", "label")</br>
