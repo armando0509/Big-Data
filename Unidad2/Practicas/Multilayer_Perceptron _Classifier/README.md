@@ -2,7 +2,7 @@
 
 <b><br>Que es el algoritmo Multilayer Perceptor Classifier ? </b></br>
 
-<b><br>Un perceptrón multicapa (MLP) es una clase de red neuronal artificial de alimentación directa (ANN). El término MLP se usa de manera ambigua, a veces de manera flexible para referirse a cualquier ANN anticipado, a veces estrictamente para referirse a redes compuestas de múltiples capas de perceptrones (con activación de umbral); ver § Terminología . Los perceptrones multicapa a veces se denominan coloquialmente redes neuronales "vainilla", especialmente cuando tienen una sola capa oculta.</b></br>
+<br>Un perceptrón multicapa (MLP) es una clase de red neuronal artificial de alimentación directa (ANN). El término MLP se usa de manera ambigua, a veces de manera flexible para referirse a cualquier ANN anticipado, a veces estrictamente para referirse a redes compuestas de múltiples capas de perceptrones (con activación de umbral); ver § Terminología . Los perceptrones multicapa a veces se denominan coloquialmente redes neuronales "vainilla", especialmente cuando tienen una sola capa oculta.</br>
 
 
 <br>Un MLP consta de al menos tres capas de nodos: una capa de entrada, una capa oculta y una capa de salida. Excepto por los nodos de entrada, cada nodo es una neurona que usa una función de activación no lineal . MLP utiliza una técnica de aprendizaje supervisado llamada retropropagación para capacitación.</br>
@@ -56,5 +56,5 @@
 
 
    <b><br> Tema: Multilayer Perceptor Classifier </b> </br>   
-   
+
 <b><br>  Ocegueda Meraz Armando # 14212337</b> </br>   
