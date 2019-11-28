@@ -1,10 +1,10 @@
  
-  <b><br> Tema: Evaluacion Examen Unidad 2 </b> </br>   
+  <b><br> Tema: Evaluacion de Examen Unidad 2 </b> </br>   
 
  
  </b>  &bull;  Primero para empezar a utilizar el desarrollo del examen se hace la importación del algoritmo Multilayer Perception Classifier, estas son importantes para generar parte del algoritmo y trabajar con nuestros datos posteriormente. </b></br> 
 
- <br> </b>&bull;  1.- hacer la limpieza de datos necesaria para poder ser procesado con el siguiente algoritmo. </b></br> 
+ <br> <b>&bull;  1.- hacer la limpieza de datos necesaria para poder ser procesado con el siguiente algoritmo. </b></br> 
 
 <br>  &bull; import org.apache.spark.ml.classification.MultilayerPerceptronClassifier</br> 
 <br>  &bull; import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator</br> 
