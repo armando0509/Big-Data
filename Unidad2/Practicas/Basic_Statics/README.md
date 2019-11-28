@@ -1,13 +1,14 @@
-Basics_Statics
 
 
-// Ocegueda Meraz Armando # 14212337, Titulo: Estadisticas basicas 
+// Ocegueda Meraz Armando # 14212337, Titulo: Basics_Statics
 
 
-// Correlacion
+
+          ######  Correlacion ######
+
 //  Que es el algoritmo Correlacion?
 
-Calculo de correlacion la matriz de correlacion para el conjunto de datos de entrada de vectores utilizando el metodo especificado. La salida ser� un DataFrame que contiene la matriz de correlacion de la columna de vectores.
+Calculo de correlacion la matriz de correlacion para el conjunto de datos de entrada de vectores utilizando el metodo especificado. La salida sera un DataFrame que contiene la matriz de correlacion de la columna de vectores.
 
 // Como funciona
 Importamos las bibliotecas y paquetes necesarios para cargar el programa.
@@ -44,8 +45,8 @@ Y por ultimo generamos nuestra Matriz de correlacion de Spearman e imprimimos lo
 * println (s "Matriz de correlacion de Spearman: \ n $ coeff2")
 
 
-####  Evaluaci�n_de_la_hip�tesis
-###  Que es el algoritmo Evaluaci�n de la hip�tesis?
+####  Evaluacion_de_la_hipotesis
+###  Que es el algoritmo Evaluacion de la hipotesis?
 La prueba de hipotesis es una herramienta poderosa en estadistica para determinar si un resultado es estadisticamente significativo, si este resultado es por casualidad o no. spark.mlactualmente es compatible con Chi-cuadrado de Pearson (?2) pruebas de independencia.
 
 ###  Como funciona:
@@ -96,7 +97,7 @@ Si tiene un conjunto dado de totales para cada columna y fila, entonces no tiene
 * println (s "estadisticas $ {chi.getAs [ Vector ] (2)}")
 Se tiene el 75% de posibilidades de encontrar una discrepancia entre las distribuciones observadas y esperadas que es al menos este extremo.
 
-####  Resumen
+####  Sumarizacion 
 ###  Que es el algoritmo Sumarizacion?
 El uso del resumen para calcular la media y la varianza para una columna de vector del marco de datos de entrada, con y sin una columna de peso.
 

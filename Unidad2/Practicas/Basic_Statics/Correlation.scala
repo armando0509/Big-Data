@@ -1,4 +1,4 @@
-//Equipo # 1
+//Equipo # 1 Correlacion
 
 import org.apache.spark.ml.linalg.{Matrix, Vectors}
 import org.apache.spark.ml.stat.Correlation
