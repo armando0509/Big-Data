@@ -77,7 +77,7 @@ dataset2.columns</br>
 <br><b> &bull;  Aqui es donde se calcula la predicción con la muestra del conjunto de prueba.</br></b>
 <br>val result = model.transform(test)</br>
 
-<br><b> &bull; 10.- Aqui se imprime los resultados del cálculo del conjunto de prueba con un result.show().</br></b>
+<br><b> &bull; 10.-Se imprime los resultados del cálculo del conjunto de prueba con un result.show().</br></b>
 
 <br>result.show()</br>
 
