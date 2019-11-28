@@ -8,7 +8,7 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature.{IndexToString, StringIndexer, VectorIndexer}
 
 // Load the data stored in LIBSVM format as a DataFrame.
-val data = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
+val data = spark.read.format("libsvm").load("/home/armando/Escritorio/spark-2.4.4-bin-hadoop2.7/sample_libsvm_data.txt")
 
 // Index labels, adding metadata to the label column.
 // Fit on whole dataset to include all labels in index.
