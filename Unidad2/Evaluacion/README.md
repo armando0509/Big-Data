@@ -14,28 +14,28 @@
 <br>  &bull; import org.apache.log4j._</br> 
 <br>  &bull; Logger.getLogger("org").setLevel(Level.ERROR)</br> 
 
-<br> &bull;  Aqui es donde se hace la creación de la sección de spark.</br> 
+<br> &bull; 2.- Aqui es donde se hace la creación de la sección de spark.</br> 
 <br> val Spark= SparkSession.builder().getOrCreate()</br> 
 
-<br><b> &bull; En esta estructura es donde se hace la carga y lectura de nuestro dataset en un formato csv.</br></b> 
+<br><b> &bull; 3.-En esta estructura es donde se hace la carga y lectura de nuestro dataset en un formato csv.</br></b> 
 <br>val dataset = spark.read.option("header","true").option("inferSchema", "true")csv("Iris.csv")</br>
 
-<b><br> &bull; Podemos aqui mostrar y ver el data set que cargamos anteriormente.</br></b>
+<b><br> &bull; 4.-Podemos aqui mostrar y ver el data set que cargamos anteriormente.</br></b>
 <br>dataset.show()</br>
 
-<br><b> &bull; En esta parte se muestra la visualización del esquema y en como se encuentran nuestros datos.</br></b>
+<br><b> &bull;5.- En esta parte se muestra la visualización del esquema y en como se encuentran nuestros datos.</br></b>
 <br>dataset.printSchema()</br>
 
-<br> <b>&bull;  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
+<br> <b>&bull;6.-  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
 
 <br> structfield este se volvera un objeto structtype. Si uno de estos nombres que nosotros proporcionamos no contiene un campo</br>
 
-<br><b> &bull;  En caso de extraer un solo Structfield se devolverá un valor nulo.</br></b>
+<br><b> &bull; 7.- En caso de extraer un solo Structfield se devolverá un valor nulo.</br></b>
 
 <br>val datasetSchema =  /// estructura de un StructType
 StructType(</br>
 
- <br>Este es el nombre del campo, tipo de dato en el que corresponda e indicar si los valores de este capo serán valores nulos.</br>
+ <br> &bull; 8.-Este es el nombre del campo, tipo de dato en el que corresponda e indicar si los valores de este capo serán valores nulos.</br>
 
 <br> &bull;StructField("Cinco/uno", DoubleType, true) :: </br>
 <br> &bull;StructField("Tres/tres", DoubleType, true) ::///los metadatos de este campo deben de conservarse durante la transformación si el contenido de la columna no se modifican.</br>
@@ -43,7 +43,7 @@ StructType(</br>
 <br> &bull;StructField("Cero/dos",DoubleType, true) ::</br>
 <br> &bull;StructField("Iris-setosa", StringType, true) :: Nil)</br>
 
-<br><b> &bull;  En esta parte es donde se carga y se muestra el análisis del dataframe que esta completo y posteriormente listo para ser utilizado.</br></b>
+<br><b> &bull; 9.- En esta parte es donde se carga y se muestra el análisis del dataframe que esta completo y posteriormente listo para ser utilizado.</br></b>
 
 <br>val dataset2 = spark.read.option("header", "false").schema(datasetSchema)csv("Iris.csv")
 dataset2.columns</br>
@@ -77,7 +77,7 @@ dataset2.columns</br>
 <br><b> &bull;  Aqui es donde se calcula la predicción con la muestra del conjunto de prueba.</br></b>
 <br>val result = model.transform(test)</br>
 
-<br><b> &bull;  Aqui se imprime los resultados del cálculo del conjunto de prueba con un result.show().</br></b>
+<br><b> &bull; 10.- Aqui se imprime los resultados del cálculo del conjunto de prueba con un result.show().</br></b>
 
 <br>result.show()</br>
 
