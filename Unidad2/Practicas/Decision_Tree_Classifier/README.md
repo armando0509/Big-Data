@@ -9,24 +9,24 @@
 
 <b><br> &bull; Importamos las bibliotecas y paquetes necesarios para cargar el programa.</b></br>
 
-* <br>&bull; importar org.apache.spark.ml.Pipeline</br>
-*<br> &bull; importar org.apache.spark.ml.classification.DecisionTreeClassificationModel</br>
-* <br>&bull; importar org.apache.spark.ml.classification.DecisionTreeClassifier</br>
-*<br> &bull; import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator</br>
-*<br> &bull; import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer}</br>
-*<br>&bull;  importar org.apache.spark.sql.SparkSession</br>
+ <br>&bull; importar org.apache.spark.ml.Pipeline</br>
+<br> &bull; importar org.apache.spark.ml.classification.DecisionTreeClassificationModel</br>
+ <br>&bull; importar org.apache.spark.ml.classification.DecisionTreeClassifier</br>
+<br> &bull; import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator</br>
+<br> &bull; import org.apache.spark.ml.feature. {IndexToString, StringIndexer, VectorIndexer}</br>
+<br>&bull;  importar org.apache.spark.sql.SparkSession</br>
 
 <b><br>Creamos una instancia de la sesion de spark</br></b>
-* <br>val spark = SparkSession.builder.appName ("DecisionTreeClassificationExample"). </br>
+ <br>val spark = SparkSession.builder.appName ("DecisionTreeClassificationExample"). </br>
 <br>getOrCreate ()</br>
 
 <br>cargan un conjunto de datos en formato LibSVM, lo dividen en conjuntos de entrenamiento y prueba, entrenan en el primer conjunto de datos y luego evaluan en el conjunto de prueba extendido. Necesite dos transformadores de caracteristicas para preparar los datos; Estas categorias de indice de ayuda para la etiqueta y las caracteristicas categoricas, aceptan metadatos a los DataFrameque el algoritmo del arbol de decision puede reconocer.</br>
 
-*<br> &bull; val data = spark.read.format ("libsvm"). load ("spark / data / mllib / sample_libsvm_data.txt")</br>
+<br> &bull; val data = spark.read.format ("libsvm"). load ("spark / data / mllib / sample_libsvm_data.txt")</br>
 
 <br> &bull; indice de etiquetas, agregando metadatos a la columna de etiquetas. Tambien se ajusta a todo el conjunto de datos para incluir todas las etiquetas en el indice.</br>
 
-* <br> &bull; val labelIndexer = new StringIndexer (). setInputCol ("label"). setOutputCol ("indexedLabel"). fit (data)</br>
+<br> &bull; val labelIndexer = new StringIndexer (). setInputCol ("label"). setOutputCol ("indexedLabel"). fit (data)</br>
 
 <br> &bull;Identifica automaticamente las caracteristicas categoricas e indicazalas.</br>
 *<br> val featureIndexer = new VectorIndexer (). setInputCol ("features"). setOutputCol ("indexedFeatures"). setMaxCategories (4) .fit (datos)</br>
@@ -49,11 +49,11 @@ MLlib estandariza las API para algoritmos de aprendizaje automatico para facilit
 
 <br>En el aprendizaje automatico, es comun ejecutar una secuencia de algoritmos para procesar y aprender de los datos. Por ejemplo, un flujo de trabajo de procesamiento de documentos de texto simple puede incluir varias etapas:</br>
 
-* <br>&bull;Divide el texto de cada documento en palabras.</br>
-* <br>&bull;Convierta las palabras de cada documento en un vector de caracteristicas numericas.</br>
-* <br>&bull;Aprenda un modelo de prediccion utilizando los vectores de caracteristicas y las etiquetas.</br>
+<br>&bull;Divide el texto de cada documento en palabras.</br>
+ <br>&bull;Convierta las palabras de cada documento en un vector de caracteristicas numericas.</br>
+ <br>&bull;Aprenda un modelo de prediccion utilizando los vectores de caracteristicas y las etiquetas.</br>
 <br>&bull;Modelo de entrenamiento Esto tambien realiza los indexadores.</br>
-*<br>&bull;modelo val = pipeline.fit (trainingData)</br>
+<br>&bull;modelo val = pipeline.fit (trainingData)</br>
 
 <br>&bull;Generamos la prediccion con la siguiente variable</br>
 * <br>predicciones val = model.transform (testData)</br>
