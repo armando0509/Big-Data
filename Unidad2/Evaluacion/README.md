@@ -48,8 +48,8 @@ StructType(</br>
 <br>val dataset2 = spark.read.option("header", "false").schema(datasetSchema)csv("Iris.csv")
 dataset2.columns</br>
 
-<br><b> &bull; En esta parte aqui se muestra la lectura del dataset limpio.</br></b>
-<br><b> creación de nuestra etiqueta con la que se trabajara en este algoritmo.</br></b>
+<br><b> &bull; Despues se muestra la lectura del dataset limpio y la creación de nuestra etiqueta con la que se trabajara en este algoritmo.</br></b>
+
 
  <br><b> &bull;  En esta se muestra las características con las que cuenta nuestra dataset en cual será un nuevo vector Assembler el cual contendrá nuestra entrada de datos con un arreglo el cual contendrá nuestras características y tendremos una salida de "factures" características.</br></b>
 
