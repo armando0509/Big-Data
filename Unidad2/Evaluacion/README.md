@@ -2,17 +2,17 @@
   <b><br> Tema: Evaluacion Examen Unidad 2 </b> </br>   
 
  
- </b>Primero para empezar a utilizar el desarrollo del examen se hace la importación del algoritmo Multilayer Perception Classifier, estas son importantes para generar parte del algoritmo y trabajar con nuestros datos posteriormente. </b></br> 
+ </b>  &bull;  Primero para empezar a utilizar el desarrollo del examen se hace la importación del algoritmo Multilayer Perception Classifier, estas son importantes para generar parte del algoritmo y trabajar con nuestros datos posteriormente. </b></br> 
 
  <br> </b>&bull;  1.- hacer la limpieza de datos necesaria para poder ser procesado con el siguiente algoritmo. </b></br> 
 
-<br> import org.apache.spark.ml.classification.MultilayerPerceptronClassifier</br> 
-<br> import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator</br> 
-<br> import org.apache.spark.sql.SparkSession</br> 
-<br> import org.apache.spark.ml.Pipeline</br> 
-<br> import org.apache.spark.sql.types._</br> 
-<br> import org.apache.log4j._</br> 
-<br> Logger.getLogger("org").setLevel(Level.ERROR)</br> 
+<br>  &bull; import org.apache.spark.ml.classification.MultilayerPerceptronClassifier</br> 
+<br>  &bull; import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator</br> 
+<br>  &bull; import org.apache.spark.sql.SparkSession</br> 
+<br>  &bull; import org.apache.spark.ml.Pipeline</br> 
+<br>  &bull; import org.apache.spark.sql.types._</br> 
+<br>  &bull; import org.apache.log4j._</br> 
+<br>  &bull; Logger.getLogger("org").setLevel(Level.ERROR)</br> 
 
 <br> &bull;  Aqui es donde se hace la creación de la sección de spark.</br> 
 <br> val Spark= SparkSession.builder().getOrCreate()</br> 
@@ -61,10 +61,10 @@ dataset2.columns</br>
 <br>val layers = Array[Int](4, 5, 4, 3)</br>
 
 <br><b> &bull; creamos el entrenador multilayerPercptronClassifier y establecimiento de sus parámetros.</br></b>
-<br><b>val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setLabelCol("label").setFeaturesCol("features").setPredictionCol("prediction").setBlockSize(128).setSeed(1234L).setMaxIter(100)</br></b>
+<br>val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setLabelCol("label").setFeaturesCol("features").setPredictionCol("prediction").setBlockSize(128).setSeed(1234L).setMaxIter(100)</br>
 
-<br><b> &bull; e.- Explique la función de error que utilizó para el resultado final
-val pipeline = new Pipeline().setStages(Array(labelIndexer,featureIndexer,trainer))</br></b>
+<br><b> &bull; e.- Explique la función de error que utilizó para el resultado final</br></b>
+<br>val pipeline = new Pipeline().setStages(Array(labelIndexer,featureIndexer,trainer))</br>
 
 <br><b> &bull;  En esta parte es donde entrenamos el modelo de clasificación de perceptrón multicapa utilizando el estimador anterior.</br></b>
 <br>val model = pipeline.fit(train)</br>
