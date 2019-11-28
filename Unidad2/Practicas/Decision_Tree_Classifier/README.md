@@ -1,4 +1,7 @@
-<b><br> Clasificador de Arbol de decision </b></br>    <b> Ocegueda Meraz Armando # 14212337</b> 
+<b><br> Clasificador de Arbol de decision </b></br>   
+
+
+<b><br>    Ocegueda Meraz Armando # 14212337</b> </br>   
 
 
 <b><br>Que es el algoritmo Clasificador de arbol de decision? </b></br>
