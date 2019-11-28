@@ -8,7 +8,7 @@
 
   <br>  Como funciona Importamos las bibliotecas y paquetes necesarios para cargar el programa. import org.apache.spark.ml.linalg. {Matriz, Vectores} importar org.apache.spark.ml.stat.Correlation importar org.apache.spark.sql.Row importar org.apache.spark.sql.SparkSession  </br> 
 
-<br>   Creamos una instancia de la sesion de spark </br> 
+<br>   &bull;   Creamos una instancia de la sesion de spark </br> 
 
 <br>val spark = SparkSession.builder.appName ("CorrelationExample"). GetOrCreate ()
  Realizamos una importacion de: import spark.implicits._ implicitas objeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones.implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.</br> 
@@ -17,10 +17,10 @@
  
  <br> val data = Seq ( Vectors.sparse (4, Seq ((0, 1.0), (3, -2.0))), Vectores densos (4.0, 5.0, 0.0, 3.0), Vectors.dense (6.0, 7.0, 0.0, 8.0), Vectors.sparse (4, Seq ((0, 9.0), (3, 1.0))) )</br> 
 
-<br> Posteriormente creamos el marco de datos y creemos un marco de datos a partir de la siguiente manera:</br>
+<br> &bull;   Posteriormente creamos el marco de datos y creemos un marco de datos a partir de la siguiente manera:</br>
 
 <br>val df = data.map (Tuple1.apply) .toDF ("caracteristicas")</br>
-<br>Generamos nuestra Matriz de correlacion de Pearson e imprimimos los resultados:</br>
+<br> &bull;   Generamos nuestra Matriz de correlacion de Pearson e imprimimos los resultados:</br>
 
 <br>val Row (coeff1: Matrix) = Correlation.corr (df, "features"). head
 println (s "Matriz de correlacion de Pearson: \ n $ coeff1")
@@ -40,7 +40,7 @@ println (s "Matriz de correlacion de Spearman: \ n $ coeff2")</br>
 
 
 
-</br> <b>Como funciona:</br><b> 
+</br> <b>Como funciona:</br></b> 
 
 <br>import org.apache.spark.ml.linalg. {Vector, Vectors}</br>
 <br>importar org.apache.spark.ml.stat.ChiSquareTest</br>
@@ -53,8 +53,8 @@ println (s "Matriz de correlacion de Spearman: \ n $ coeff2")</br>
 <br>val spark = SparkSession.builder.appName ("EvaluacionHipotesisExample"). getOrCreate ()
 Realizamos una importacion de:</br>
 
-<br>import spark.implicits._<br>
-<br>implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones. implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.<br>
+<br>import spark.implicits._</br>
+<br>implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones. implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.</br>
 
 <br>La declaracion de los vectores densos esta respaldada por una matriz doble que representa sus valores de entrada.</br>
 
@@ -66,12 +66,12 @@ Realizamos una importacion de:</br>
  <br>Funcion de prueba de invocacion de la clase ChiSquareTest: Realice la prueba de independencia de Pearson para cada caracteristica contra la etiqueta. Para cada caracteristica, los pares (caracteristica, etiqueta) verifique en una matriz de contingencia para la cualidad calcular la estadistica Chi-cuadrado. Todos los valores de etiquetas y caracteristicas deben ser categoricos. La hipotesis nula es que la aparicipn de los resultados es estadisticamente independiente.</br>
 
 <br> &bull;   <b>
- Parametros:  </b>
+ Parametros:  </br> <b>
  conjunto de datos- DataFrame de etiquetas categoricas y caracteristicas categoricas. Las caracteristicas con valor real se trataron como categorias para cada valor distinto. </br>
 
 
 <br> <b>
- Devoluciones: </b>
+ Devoluciones: </b></br>
   DataFrame que contiene el resultado de la prueba para cada caracteristica contra la etiqueta. Este DataFrame contiene una fila unica con los siguientes campos: - pValues: Vector - degreesOfFreedom: Array [Int] - estadisticas: Vector Cada uno de estos campos tiene un valor por caracteristica.</br>
 
 <br>val chi = ChiSquareTest.test (df, "caracteristicas", "etiqueta"). head
