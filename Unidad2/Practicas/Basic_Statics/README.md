@@ -72,7 +72,7 @@ Realizamos una importacion de:</br>
 <br> <b> &bull; Devoluciones: </b></br>
   <br> DataFrame que contiene el resultado de la prueba para cada caracteristica contra la etiqueta. Este DataFrame contiene una fila unica con los siguientes campos: - pValues: Vector - degreesOfFreedom: Array [Int] - estadisticas: Vector Cada uno de estos campos tiene un valor por caracteristica.</br>
 
-<br>val chi = ChiSquareTest.test (df, "caracteristicas", "etiqueta"). head
+<br> &bull; val chi = ChiSquareTest.test (df, "caracteristicas", "etiqueta"). head
 Finalmente imprimimos los resultados del algoritmo:</br>
 
 <br>println (s "pValues ??= $ {chi.getAs [ Vector ] (0)}") ---> Nombre de la columna de caracteristicas en el conjunto de datos, de tipo Vector (VectorUDT) y Nombre de la columna de etiqueta en el conjunto de datos, de cualquier tipo numerico</br>
@@ -83,21 +83,21 @@ Finalmente imprimimos los resultados del algoritmo:</br>
 
 <br><b>Que es el algoritmo Sumarizacion?</br></b>
 
-<br>El uso del resumen para calcular la media y la varianza para una columna de vector del marco de datos de entrada, con y sin una columna de peso.</br>
+<br> &bull; El uso del resumen para calcular la media y la varianza para una columna de vector del marco de datos de entrada, con y sin una columna de peso.</br>
 
 <br><b><font color="blue">Como funciona:</br></b></font>
 
 <br><b>Importamos las bibliotecas y paquetes necesarios para cargar el programa.</br></b>
 
-<br>import org.apache.spark.ml.linalg. {Vector, Vectors}</br>
-<br>importar org.apache.spark.ml.stat.Summarizer</br>
-<br>importar org.apache.spark.sql.SparkSession</br>
+<br> &bull; import org.apache.spark.ml.linalg. {Vector, Vectors}</br>
+<br>&bull; importar org.apache.spark.ml.stat.Summarizer</br>
+<br>&bull; importar org.apache.spark.sql.SparkSession</br>
 <b><br>Creamos una instancia de la sesion de spark</br></b>
 
 <br>val spark = SparkSession.builder.appName ("CorrelationExample"). GetOrCreate ()
 Realizamos una importacion de:</br>
 
-<br>import spark.implicits._ implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones. implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.</br>
+<br>&bull; import spark.implicits._ implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones. implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.</br>
 
 <br>Importar resumen ._ Herramientas para estadisticas vectorizadas en vectores MLlib. Los metodos en este paquete tienen varias estadisticas para los vectores contenidos dentro de DataFrames.</br>
 <br>La declaracion de los vectores densos esta respaldada por una matriz doble que representa sus valores de entrada. val data = Seq ( (Vectors.dense (2.0, 3.0, 5.0), 1.0), (Vectors.dense (4.0, 6.0, 7.0), 2.0) )</br>
@@ -117,7 +117,7 @@ Realizamos una importacion de:</br>
 <br>val (meanVal2, varianceVal2) = df.select (mean ($ "features"), varnce ($ "features")). como [(Vector, Vector)]. first ()
 Resultados</br>
 
-<br>println (s "sin peso: mean = $ {meanVal2}, sum = $ {varianceVal2}")</br>
+<br> &bull; println (s "sin peso: mean = $ {meanVal2}, sum = $ {varianceVal2}")</br>
 
 
 
