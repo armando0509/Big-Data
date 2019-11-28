@@ -47,7 +47,7 @@ Y por ultimo generamos nuestra Matriz de correlacion de Spearman e imprimimos lo
 
 ####  Evaluacion_de_la_hipotesis
 ###  Que es el algoritmo Evaluacion de la hipotesis?
-La prueba de hipotesis es una herramienta poderosa en estadistica para determinar si un resultado es estadisticamente significativo, si este resultado es por casualidad o no. spark.mlactualmente es compatible con Chi-cuadrado de Pearson (?2) pruebas de independencia.
+La prueba de hipotesis es una herramienta poderosa en estadistica para determinar si un resultado es estadisticamente significativo, si este resultado es por casualidad o no. spark.mlactualmente es compatible con Chi-cuadrado de Pearson (2) pruebas de independencia.
 
 ###  Como funciona:
 Importamos las bibliotecas y paquetes necesarios para cargar el programa.
@@ -83,7 +83,7 @@ Realice la prueba de independencia de Pearson para cada caracteristica contra la
 La hipotesis nula es que la aparicipn de los resultados es estadisticamente independiente.
 
 Parametros:
-conjunto de datos- DataFrame de etiquetas categoricas y caracteristicas categoricas. Las caracter�sticas con valor real se trataron como categorias para cada valor distinto.
+conjunto de datos- DataFrame de etiquetas categoricas y caracteristicas categoricas. Las caracteristicas con valor real se trataron como categorias para cada valor distinto.
 
 Devoluciones:
 DataFrame que contiene el resultado de la prueba para cada caracteristica contra la etiqueta. Este DataFrame contiene una fila unica con los siguientes campos: - pValues: Vector - degreesOfFreedom: Array [Int] - estadisticas: Vector Cada uno de estos campos tiene un valor por caracteristica.
@@ -92,7 +92,7 @@ DataFrame que contiene el resultado de la prueba para cada caracteristica contra
 Finalmente imprimimos los resultados del algoritmo:
 * println (s "pValues ??= $ {chi.getAs [ Vector ] (0)}") ---> Nombre de la columna de caracteristicas en el conjunto de datos, de tipo Vector (VectorUDT) y Nombre de la columna de etiqueta en el conjunto de datos, de cualquier tipo numerico
 *   println (s "degreesOfFreedom $ {chi.getSeq [ Int ] (1) .mkString (" [",", ","] ")}") ---> grado de libertad en el que se puede desplazar
-son el numero de celdas que necesita completar antes, dados los totales en los m�rgenes, puede completar el resto de la cuadricula utilizando una formula.
+son el numero de celdas que necesita completar antes, dados los totales en los margenes, puede completar el resto de la cuadricula utilizando una formula.
 Si tiene un conjunto dado de totales para cada columna y fila, entonces no tiene libertad ilimitada al completar las celdas. 
 * println (s "estadisticas $ {chi.getAs [ Vector ] (2)}")
 Se tiene el 75% de posibilidades de encontrar una discrepancia entre las distribuciones observadas y esperadas que es al menos este extremo.
@@ -112,26 +112,26 @@ Creamos una instancia de la sesion de spark
 
 Realizamos una importacion de:
 * import spark.implicits._
-impl�citasobjeto de conversaciones impl�citas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones.
+implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl. DDR) en un conjunto de datos, marco de datos, columnas para apoyar conversaciones.
 implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.
 * Importar resumen ._
-Herramientas para estad�sticas vectorizadas en vectores MLlib.
-Los m�todos en este paquete tienen varias estad�sticas para los vectores contenidos dentro de DataFrames.
+Herramientas para estadisticas vectorizadas en vectores MLlib.
+Los m�todos en este paquete tienen varias estadisticas para los vectores contenidos dentro de DataFrames.
 
-La declaraci�n de los vectores densos est� respaldada por una matriz doble que representa sus valores de entrada.
+La declaracion de los vectores densos esta respaldada por una matriz doble que representa sus valores de entrada.
 val data = Seq (
   (Vectors.dense (2.0, 3.0, 5.0), 1.0),
   (Vectors.dense (4.0, 6.0, 7.0), 2.0)
   )
 
- creaci�n del marco de datos y Convertimos de etiquetas a peso el marco de datos
-* val df = data.toDF ("caracter�sticas", "peso")
+ creacion del marco de datos y Convertimos de etiquetas a peso el marco de datos
+* val df = data.toDF ("caracteristicas", "peso")
 
-Calcule la media y la varianza de las columnas del marco de datos usando weightCol el cual es Par�metro para el nombre de la columna de peso.
+Calcule la media y la varianza de las columnas del marco de datos usando weightCol el cual es Parametro para el nombre de la columna de peso.
 * val (meanVal, varianceVal) = df.select (metrics ("mean", "varnce"). summary ($ "features", $ "weight"). as ("summary")). select ("summary.mean "," summary.variance "). como [(Vector, Vector)]. first ()
 
 Resultado 
-* println (s "con ponderaci�n: mean = $ {meanVal}, varnce = $ {varianceVal}")
+* println (s "con ponderacion: mean = $ {meanVal}, varnce = $ {varianceVal}")
 
 
 Calcule la media y la varianza de las columnas del marco de datos sin usar weightCol
