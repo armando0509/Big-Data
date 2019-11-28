@@ -20,14 +20,14 @@
 <br><b> &bull; En esta estructura es donde se hace la carga y lectura de nuestro dataset en un formato csv.</br></b> 
 <br>val dataset = spark.read.option("header","true").option("inferSchema", "true")csv("Iris.csv")</br>
 
-<b><br> &bull; Podemos aqui mostrar y ver el data set que cargamos anteriormente.
-dataset.show()</br></b>
+<b><br> &bull; Podemos aqui mostrar y ver el data set que cargamos anteriormente.</br></b>
+<br>dataset.show()</br>
 
 <br><b> &bull; En esta parte se muestra la visualización del esquema y en como se encuentran nuestros datos.</br></b>
 <br>dataset.printSchema()</br>
 
-<br><b> &bull;  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
-<br><b> structfield este se volvera un objeto structtype. Si uno de estos nombres que nosotros proporcionamos no contiene un campo</br></b>
+<br> &bull;  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
+<br><b> structfield este se volvera un objeto structtype. Si uno de estos nombres que nosotros proporcionamos no contiene un campo</br>
 
 <br><b> &bull;  En caso de extraer un solo Structfield se devolverá un valor nulo.</br></b>
 
