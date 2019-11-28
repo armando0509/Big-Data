@@ -34,13 +34,15 @@
 <br>val datasetSchema =  /// estructura de un StructType
 StructType(</br>
 
-<br>StructField("Cinco/uno", DoubleType, true) :: /// Este es el nombre del campo, tipo de dato en el que corresponda e indicar si los valores de este capo serán valores nulos.</br>
-<br>StructField("Tres/tres", DoubleType, true) ::///los metadatos de este campo deben de conservarse durante la transformación si el contenido de la columna no se modifican.</br>
-<br>StructField("Uno/cuatro", DoubleType, true) ::</br>
-<br>StructField("Cero/dos",DoubleType, true) ::</br>
-<br>StructField("Iris-setosa", StringType, true) :: Nil)</br>
+ <br>Este es el nombre del campo, tipo de dato en el que corresponda e indicar si los valores de este capo serán valores nulos.</br>
+<br>  &bull;StructField("Cinco/uno", DoubleType, true) :: </br>
+<br> &bull;StructField("Tres/tres", DoubleType, true) ::///los metadatos de este campo deben de conservarse durante la transformación si el contenido de la columna no se modifican.</br>
+<br> &bull;StructField("Uno/cuatro", DoubleType, true) ::</br>
+<br> &bull;StructField("Cero/dos",DoubleType, true) ::</br>
+<br> &bull;StructField("Iris-setosa", StringType, true) :: Nil)</br>
 
 <br><b> &bull;  En esta parte es donde se carga y se muestra el análisis del dataframe que esta completo y posteriormente listo para ser utilizado.</br></b>
+
 <br>val dataset2 = spark.read.option("header", "false").schema(datasetSchema)csv("Iris.csv")
 dataset2.columns</br>
 
@@ -48,6 +50,7 @@ dataset2.columns</br>
 <br><b> creación de nuestra etiqueta con la que se trabajara en este algoritmo.</br></b>
 
  <br><b> &bull;  En esta se muestra las características con las que cuenta nuestra dataset en cual será un nuevo vector Assembler el cual contendrá nuestra entrada de datos con un arreglo el cual contendrá nuestras características y tendremos una salida de "factures" características.</br></b>
+ 
  <br>val featureIndexer = new VectorAssembler().setInputCols(Array("Cinco/uno", "Tres/tres", "Uno/cuatro", "Cero/dos")).setOutputCol("features")</br>
 
 
