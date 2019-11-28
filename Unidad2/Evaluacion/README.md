@@ -26,8 +26,9 @@
 <br><b> &bull; En esta parte se muestra la visualización del esquema y en como se encuentran nuestros datos.</br></b>
 <br>dataset.printSchema()</br>
 
-<br> &bull;  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
-<br><b> structfield este se volvera un objeto structtype. Si uno de estos nombres que nosotros proporcionamos no contiene un campo</br>
+<br> <b>&bull;  Aqui se crea una variable que contiene el objeto StructType el cual puede tener uno o más structfields se puede extraer por nombres, en caso de extraer varios.</br></b>
+
+<br> structfield este se volvera un objeto structtype. Si uno de estos nombres que nosotros proporcionamos no contiene un campo</br>
 
 <br><b> &bull;  En caso de extraer un solo Structfield se devolverá un valor nulo.</br></b>
 
@@ -35,7 +36,8 @@
 StructType(</br>
 
  <br>Este es el nombre del campo, tipo de dato en el que corresponda e indicar si los valores de este capo serán valores nulos.</br>
-<br>  &bull;StructField("Cinco/uno", DoubleType, true) :: </br>
+
+<br> &bull;StructField("Cinco/uno", DoubleType, true) :: </br>
 <br> &bull;StructField("Tres/tres", DoubleType, true) ::///los metadatos de este campo deben de conservarse durante la transformación si el contenido de la columna no se modifican.</br>
 <br> &bull;StructField("Uno/cuatro", DoubleType, true) ::</br>
 <br> &bull;StructField("Cero/dos",DoubleType, true) ::</br>
@@ -50,7 +52,7 @@ dataset2.columns</br>
 <br><b> creación de nuestra etiqueta con la que se trabajara en este algoritmo.</br></b>
 
  <br><b> &bull;  En esta se muestra las características con las que cuenta nuestra dataset en cual será un nuevo vector Assembler el cual contendrá nuestra entrada de datos con un arreglo el cual contendrá nuestras características y tendremos una salida de "factures" características.</br></b>
- 
+
  <br>val featureIndexer = new VectorAssembler().setInputCols(Array("Cinco/uno", "Tres/tres", "Uno/cuatro", "Cero/dos")).setOutputCol("features")</br>
 
 
