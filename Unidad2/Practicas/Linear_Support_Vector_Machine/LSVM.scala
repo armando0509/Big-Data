@@ -3,7 +3,7 @@
 import org.apache.spark.ml.classification.LinearSVC
 
 // Load training data
-val training = spark.read.format("libsvm").load("spark-2.0.2-bin-hadoop2.7/data/mllib/sample_libsvm_data.txt")
+val training = spark.read.format("libsvm").load("/home/armando/Escritorio/spark-2.4.4-bin-hadoop2.7/data/mllib/sample_libsvm_data.txt")
 
 val lsvc = new LinearSVC()
   .setMaxIter(10)

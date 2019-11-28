@@ -6,7 +6,7 @@ val spark = SparkSession.builder.appName("NaiveBayesExample").getOrCreate()
 
     // $example on$
     // Load the data stored in LIBSVM format as a DataFrame.
-    val data = spark.read.format("libsvm").load("iris_libsvm.txt")
+    val data = spark.read.format("libsvm").load("/home/armando/Escritorio/spark-2.4.4-bin-hadoop2.7/data/mllib/iris_libsvm.txt")
     
     // Split the data into training and test sets (30% held out for testing)
     val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3), seed = 1234L)
