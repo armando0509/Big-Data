@@ -85,7 +85,7 @@ Finalmente imprimimos los resultados del algoritmo:</br>
 
 <br>El uso del resumen para calcular la media y la varianza para una columna de vector del marco de datos de entrada, con y sin una columna de peso.</br>
 
-<br><b>Como funciona:</br></b>
+<br><b><font color="blue">Como funciona:</br></b></font>
 
 <br><b>Importamos las bibliotecas y paquetes necesarios para cargar el programa.</br></b>
 
