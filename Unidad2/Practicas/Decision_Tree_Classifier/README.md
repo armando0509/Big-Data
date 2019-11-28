@@ -29,20 +29,20 @@
 <br> &bull; val labelIndexer = new StringIndexer (). setInputCol ("label"). setOutputCol ("indexedLabel"). fit (data)</br>
 
 <br> &bull;Identifica automaticamente las caracteristicas categoricas e indicazalas.</br>
-*<br> val featureIndexer = new VectorIndexer (). setInputCol ("features"). setOutputCol ("indexedFeatures"). setMaxCategories (4) .fit (datos)</br>
+<br> val featureIndexer = new VectorIndexer (). setInputCol ("features"). setOutputCol ("indexedFeatures"). setMaxCategories (4) .fit (datos)</br>
 
 <br> &bull; Posteriormente realizamos nuestro entrenamiento con nuestros datos de la siguiente mandera:
  division de datos en conjuntos de entrenamiento y prueba por medio de un arreglo (30% para pruebas).</br>
-* <br>Val Array (trainingData, testData) = data.randomSplit (Array (0.7, 0.3))</br>
+ <br>Val Array (trainingData, testData) = data.randomSplit (Array (0.7, 0.3))</br>
 
 <br>Entrenamos el modelo de arboles de desicion el cual contendra las etiquetas del indice y las caracteristicas indexadas.</br>
-* <br>val dt = new DecisionTreeClassifier (). setLabelCol ("indexedLabel"). setFeaturesCol ("indexedFeatures")</br>
+ <br>val dt = new DecisionTreeClassifier (). setLabelCol ("indexedLabel"). setFeaturesCol ("indexedFeatures")</br>
  
 <br> &bull; Se crea la conversion de las etiquetas indexadas a etiquetas originales.</br>
-* <br>val labelConverter = new IndexToString (). setInputCol ("prediction"). setOutputCol ("predicttedLabel"). setLabels (labelIndexer.labels)</br>
+ <br>val labelConverter = new IndexToString (). setInputCol ("prediction"). setOutputCol ("predicttedLabel"). setLabels (labelIndexer.labels)</br>
 
 <br> &bull; Cadena de indexadores y arbol en una tuberia.</br>
-* val pipeline = new Pipeline (). setStages (Array (labelIndexer, featureIndexer, dt, labelConverter))
+val pipeline = new Pipeline (). setStages (Array (labelIndexer, featureIndexer, dt, labelConverter))
 
 <br> Las tuberias proporcionan un conjunto uniforme de API de alto nivel creado sobre DataFrames que ayudan a los usuarios a crear y ajustar las practicas de aprendizaje automatico.
 MLlib estandariza las API para algoritmos de aprendizaje automatico para facilitar la combinacion de multiples algoritmos en una sola tuberia o flujo de trabajo. Esta seccion cubre los conceptos clave introducidos por la API de Pipelines, donde el concepto de tuberia se inspira principalmente en el proyecto scikit-learn.</br>
@@ -56,13 +56,13 @@ MLlib estandariza las API para algoritmos de aprendizaje automatico para facilit
 <br>&bull;modelo val = pipeline.fit (trainingData)</br>
 
 <br>&bull;Generamos la prediccion con la siguiente variable</br>
-* <br>predicciones val = model.transform (testData)</br>
+ <br>predicciones val = model.transform (testData)</br>
 
 <br>Seleccione filas de ejemplo para mostrar</br>
-* <br>predictions.select ("predicttedLabel", "label", "features"). show (5)</br>
+ <br>predictions.select ("predicttedLabel", "label", "features"). show (5)</br>
 
 <br>creacion del evaluador de clasificacion que contendra las etiquetas indexadas la prediccion, Seleccionar (prediccion, etiqueta verdadera) y calcular error de prueba.</br>
-* <br>val evaluator = new MulticlassClassificationEvaluator (). setLabelCol ("indexedLabel").</br>
+ <br>val evaluator = new MulticlassClassificationEvaluator (). setLabelCol ("indexedLabel").</br>
 <br> setPredictionCol ("prediction"). setMetricName ("precision")</br>
-* <br>val precision = evaluator.evaluate (predicciones) -----> nombre de la metrica de precision<br>
-* <br>println (s "Error de prueba = $ {(1.0 - precision)}") -----------> prueba del error en este algoritmo entre mas cerca de este mas de 1 precision.</br>
+ <br>val precision = evaluator.evaluate (predicciones) -----> nombre de la metrica de precision<br>
+ <br>println (s "Error de prueba = $ {(1.0 - precision)}") -----------> prueba del error en este algoritmo entre mas cerca de este mas de 1 precision.</br>
