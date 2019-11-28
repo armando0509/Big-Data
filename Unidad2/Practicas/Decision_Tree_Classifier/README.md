@@ -1,7 +1,7 @@
 ///  Clasificador de Arbol de decision ///   Ocegueda Meraz Armando # 14212337
 
 
-/// Que es el algoritmo Clasificador de arbol de decision?
+<b><br>Que es el algoritmo Clasificador de arbol de decision? </b></br>
 
 Los arboles de decision son una familia popular de metodos de clasificacion y regresion. spark.mlPuede encontrar mas informacion sobre la implementacion en la seccion sobre arboles de decision.
 
