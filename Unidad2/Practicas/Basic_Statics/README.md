@@ -116,7 +116,7 @@ implicitasobjeto de conversaciones implicitas para convertir objetos Scala (incl
 implicits es un objeto que se define dentro de SparkSession y, por lo tanto, requiere que cree una instancia de SparkSession primero antes de importar las implicitsconversiones.
 * Importar resumen ._
 Herramientas para estadisticas vectorizadas en vectores MLlib.
-Los m�todos en este paquete tienen varias estadisticas para los vectores contenidos dentro de DataFrames.
+Los metodos en este paquete tienen varias estadisticas para los vectores contenidos dentro de DataFrames.
 
 La declaracion de los vectores densos esta respaldada por una matriz doble que representa sus valores de entrada.
 val data = Seq (
