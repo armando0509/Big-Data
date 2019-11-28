@@ -1,3 +1,7 @@
+ 
+  <b><br> Tema: Evaluacion Examen Unidad 2 </b> </br>   
+
+ 
  </b>Primero para empezar a utilizar el desarrollo del examen se hace la importación del algoritmo Multilayer Perception Classifier, estas son importantes para generar parte del algoritmo y trabajar con nuestros datos posteriormente. </b></br> 
 
  <br> </b>&bull;  1.- hacer la limpieza de datos necesaria para poder ser procesado con el siguiente algoritmo. </b></br> 
@@ -82,3 +86,6 @@ result.show()</br></b>
 
 <br><b> &bull;  Aqui se muestra la salida de la prueba de la predicción total.</br></b>
 <br>println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")</br>
+
+
+<b><br>  Ocegueda Meraz Armando # 14212337</b> </br>   
