@@ -1,7 +1,7 @@
 <b><br> Clasificador de Arbol de decision </b></br>   
 
 
-<b><br>    Ocegueda Meraz Armando # 14212337</b> </br>   
+
 
 
 <b><br>Que es el algoritmo Clasificador de arbol de decision? </b></br>
@@ -69,3 +69,7 @@ MLlib estandariza las API para algoritmos de aprendizaje automatico para facilit
 <br> setPredictionCol ("prediction"). setMetricName ("precision")</br>
  <br>val precision = evaluator.evaluate (predicciones) -----> nombre de la metrica de precision<br>
  <br>println (s "Error de prueba = $ {(1.0 - precision)}") -----------> prueba del error en este algoritmo entre mas cerca de este mas de 1 precision.</br>
+
+
+
+<b><br>  Ocegueda Meraz Armando # 14212337</b> </br>   
