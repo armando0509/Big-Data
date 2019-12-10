@@ -2,7 +2,7 @@
 <b><br> KEMEANS</b></br>  
 
 <b><br> &bull; Como funciona:</b></br>
-
+## dsadas
  <br>  El algoritmo K-means es el algoritmo de clustering más conocido y utilizado ya que es de muy simple aplicaci´on y eficaz. Sigue un procedimiento simple de clasificacion de un conjunto de objetos en un determinado numero K de clusters, K determinado a priori.</br>  
 
 <br> El nombre de K-means viene porque representa cada uno de los clusters por la
