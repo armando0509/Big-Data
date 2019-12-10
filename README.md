@@ -1,31 +1,33 @@
 ~~~
-                **INSTITUTO TECNOLÓGICO DE TIJUANA**
+![Texto alternativo](/home/armando/Escritorio/01.jpg )    
+             
+                  INSTITUTO TECNOLÓGICO DE TIJUANA 
 
-                      **SUBDIRECCIÓN ACADÉMICA**
+                        SUBDIRECCIÓN ACADÉMICA**
 
                 DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
 
                       SEMESTRE AGOSTO- DICIEMBRE 2019
 
-                              **CARRERA:**
+                                CARRERA:
 
                          INGENIERÍA INFORMÁTICA
 
-                          **MATERIA Y SERIE:**
+                            MATERIA Y SERIE: 
 
-                    **DATOS MASIVOS** BDD-1704 IF9A
+                      DATOS MASIVOS** BDD-1704 IF9A
 
                          **UNIDAD POR EVALUAR:**
 
                              Proyecto Final
 
 
-                  **NOMBRE DEL ALUMNO // NO. DE CONTROL**
+                    NOMBRE DEL ALUMNO // NO. DE CONTROL**
 
                       Ocegueda Meraz Armando # 14212337
 
 
-                            **NOMBRE DEL MAESTRO:**
+                              NOMBRE DEL MAESTRO:
 
                      Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
 
@@ -37,29 +39,29 @@
 
 **Marco teórico de los algoritmos	4**
 
-**Kmeans	4**
+Kmeans	4
 
-**Decision Tree	10**
+Decision Tree	10
 
-**Multilayer Perceptron	19**
+Multilayer Perceptron	19
 
 **Implementación	27**
 
 **Por qué programar spark con scala?	28**
 
-**KMeans	30**
+KMeans	30
 
-**Multilayer Perceptron	31**
+Multilayer Perceptron	31
 
-**Decision Tree	32**
+Decision Tree	32
 
 **Resultados	33**
 
-**KMeans	33**
+KMeans	33
 
-**Multilayer Perceptron	34**
+Multilayer Perceptron	34
 
-**Decision Tree	34**
+Decision Tree	34
 
 **Conclusiones	35**
 
