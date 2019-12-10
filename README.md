@@ -102,6 +102,8 @@ O un conjunto de objetos Dn = (x1, x2..., xn), para todo el i, xi reales y k, ν
 
 
 
+
+
 **Complejidad**
 
 **n =** número de puntos,
