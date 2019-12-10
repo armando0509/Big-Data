@@ -23,7 +23,7 @@
 ////////////////////////
 /// Tome los datos //////
 //////////////////////
-~~~
+
 
 ##Importe una  SparkSession con la libreria Logistic Regression
 
@@ -125,3 +125,72 @@ val metrics = new MulticlassMetrics(predictionAndLabels)
 
 println("confusion Matrix ")
 println(metrics.confusionMatrix)
+
+
+
+##RESULTADOS
+
+scala> :load PracticaLogisticRegression.scalaLoading PracticaLogisticRegression.scala...
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.sql.SparkSession
+import org.apache.log4j._
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@85d02
+data: org.apache.spark.sql.DataFrame = [Daily Time Spent on Site: double, Age: int ... 8 more fields]
+root
+ |-- Daily Time Spent on Site: double (nullable = true)
+ |-- Age: integer (nullable = true)
+ |-- Area Income: double (nullable = true)
+ |-- Daily Internet Usage: double (nullable = true)
+ |-- Ad Topic Line: string (nullable = true)
+ |-- City: string (nullable = true)
+ |-- Male: integer (nullable = true)
+ |-- Country: string (nullable = true)
+ |-- Timestamp: timestamp (nullable = true)
+ |-- Clicked on Ad: integer (nullable = true)
+
++-------------+
+|Clicked on Ad|
++-------------+
+|            0|
+|            0|
+|            0|
+|            0|
+|            0|
+|            0|
+|            0|
+|            1|
+|            0|
+|            0|
+|            1|
+|            0|
+|            1|
+|            0|
+|            1|
+|            1|
+|            1|
+|            0|
+|            1|
+|            1|
++-------------+
+only showing top 20 rows
+
+timedata: org.apache.spark.sql.DataFrame = [Daily Time Spent on Site: double, Age: int ... 9 more fields]
+logregdata: org.apache.spark.sql.DataFrame = [label: int, Daily Time Spent on Site: double ... 5 more fields]
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.linalg.Vectors
+assembler: org.apache.spark.ml.feature.VectorAssembler = vecAssembler_d4bf2fdc7b03
+training: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [label: int, Daily Time Spent on Site: double ... 5 more fields]
+test: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [label: int, Daily Time Spent on Site: double ... 5 more fields]
+import org.apache.spark.ml.Pipeline
+lr: org.apache.spark.ml.classification.LogisticRegression = logreg_bb8d5309ab98
+pipeline: org.apache.spark.ml.Pipeline = pipeline_a27bf8b55384
+19/12/10 07:44:42 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+19/12/10 07:44:42 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+model: org.apache.spark.ml.PipelineModel = pipeline_a27bf8b55384
+results: org.apache.spark.sql.DataFrame = [label: int, Daily Time Spent on Site: double ... 9 more fields]
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+predictionAndLabels: org.apache.spark.rdd.RDD[(Double, Double)] = MapPartitionsRDD[71] at rdd at PracticaLogisticRegression.scala:34
+metrics: org.apache.spark.mllib.evaluation.MulticlassMetrics = org.apache.spark.mllib.evaluation.MulticlassMetrics@16aac18
+confusion Matrix 
+146.0  7.0    
+1.0    161.0  
