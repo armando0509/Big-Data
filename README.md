@@ -146,13 +146,20 @@ A los resultados obtenidos con la distancia euclidiana le sacamos la raíz cuadr
 
 ![Texto alternativo](/home/armando/Escritorio/4.jpg " Figura 4. Resultados obtenidos con la distancia euclidiana...")
 
+   ###### Figura 4.  Resultados obtenidos con la distancia euclidiana. ###### 
+
 Representación gráfica de las iteraciones con los nuevos centroides
 
 
 ![Texto alternativo](/home/armando/Escritorio/5.jpg "  Figura 5. Representación gráfica de la primera y segunda iteración..")
 
 
-![Texto alternativo](/home/armando/Escritorio/6.jpg " Figura 5. Representación gráfica de la tercera  y la configuración final de los centroides....")
+ ###### Figura 5. Representación gráfica de la primera y segunda iteración. ###### 
+
+![Texto alternativo](/home/armando/Escritorio/6.jpg " Figura 6. Representación gráfica de la tercera  y la configuración final de los centroides....")
+
+
+  ###### Figura 6. Representación gráfica de la tercera  y la configuración final de los centroides. ###### 
 
 
 Cuando usamos la distancia euclídea, el centroide determinado en cada iteración por el vector de medias garantiza la mejor solución con respecto a la distancia, pero considerando:
@@ -186,8 +193,13 @@ Un árbol de decisión es un sistema de soporte de decisiones que utiliza decisi
 en atributos)
 
 
-![Texto alternativo](/home/armando/Escritorio/6.jpg " Figura 6.  Representación de la metodología de árboles de decisión......")
+![Texto alternativo](/home/armando/Escritorio/7.jpg " Figura 7.  Representación de la metodología de árboles de decisión......")
         
+
+###### Figura 7.  Representación de la metodología de árboles de decisión. ###### 
+
+
+
 ## Tamaño del árbol
  
 
@@ -231,11 +243,14 @@ La entropía para cualquier P se puede calcular como:
 
 La entropía condicional es:
 
-![Texto alternativo](/home/armando/Escritorio/7.jpg )
+![Texto alternativo](/home/armando/Escritorio/8.jpg )
+
+
+
         
 Si la base es 2 para el logaritmo, entonces la unidad de medida de entropía estará en bits, si la base es 10, la unidad es dits. La ganancia de información es utilizado para medir la asociación entre entradas y salidas. Es un cambio de estado a estado en la entropía de la información, finalmente la ganancia de información se puede calcular como: -
 
-![Texto alternativo](/home/armando/Escritorio/8.jpg )
+![Texto alternativo](/home/armando/Escritorio/9.jpg )
 
 **C. poda**
  
@@ -288,13 +303,21 @@ Cuando trabajan con Univariate DT, prueban un solo atributo más de una vez que 
 
  Cada nodo de prueba seguirá la forma:
 
-![Texto alternativo](/home/armando/Escritorio/9.jpg )
+![Texto alternativo](/home/armando/Escritorio/10.jpg )
+
+
 
 Donde wi son coeficientes de valor real, yi son atributos yn es el total de atributos en una instancia. Las Figuras 3 y 4 muestran la diferencia entre el particionamiento de espacio univariado y multivariado y también representa como prueba multivariable las condiciones se colocan en nodos internos
 
-![Texto alternativo](/home/armando/Escritorio/10.jpg "Figura 7.  partición de espacio multivariante" )
+![Texto alternativo](/home/armando/Escritorio/11.jpg "Figura 7.  partición de espacio multivariante" )
 
-![Texto alternativo](/home/armando/Escritorio/11.jpg "Figura 8.  condiciones de decisión multivariadas" )
+
+###### Figura 8.  partición de espacio multivariante ######
+
+
+![Texto alternativo](/home/armando/Escritorio/12.jpg "Figura 8.  condiciones de decisión multivariadas" )
+
+###### Figura 9.  condiciones de decisión multivariadas ###### 
 
 **Construcción**
 
@@ -316,11 +339,17 @@ En primer lugar, deberíamos tener un conjunto de instancias de entrenamiento. U
 6 Haga clic en el botón Inicio y se mostrará el resultado.
 
 
-![Texto alternativo](/home/armando/Escritorio/12.jpg "Figura 9. Datos para crear árbol" )
+![Texto alternativo](/home/armando/Escritorio/13.jpg "Figura 9. Datos para crear árbol" )
+
+###### Figura 9. Datos para crear árbol ###### 
+
 
 El resultado se muestra en la ventana de salida del clasificador. El resultado se puede ver en una ventana separada. Para hacer esto, haga clic derecho en lista de resultados Para ver el árbol en forma gráfica, haga clic en la opción "visualizar árbol" en el menú emergente. Se muestra un árbol de decisión en la figura 10 que incluye la categoría, el resultado, el salario como raíz y los nodos internos y las clases para los nodos hoja son aprobado, reprobado, HOD, maestro y empleado.
 
-![Texto alternativo](/home/armando/Escritorio/13.jpg "Figura 11. Visualización del árbol de decisiones" )
+![Texto alternativo](/home/armando/Escritorio/14.jpg "Figura 11. Visualización del árbol de decisiones" )
+
+
+###### Figura 11. Visualización del árbol de decisiones ###### 
 
  ## Resultado del enfoque de árbol de decisión multivariante
  
@@ -330,7 +359,10 @@ En el programa Weka nos  proporciona un algoritmo, llamado M5P, que se utiliza p
 
 modelo de regresión donde p significa primo. Este algoritmo proporciona un modelo lineal como clases con un porcentaje de errores aproximados La aplicación de este algoritmo en el conjunto de datos es igual que la aplicación del algoritmo J48. Resultado producido por M5P se muestra en la figura 12 como se muestra a continuación:
 
-![Texto alternativo](/home/armando/Escritorio/14.jpg "Figura 12 Resultado de M5P" )
+![Texto alternativo](/home/armando/Escritorio/15.jpg "Figura 12 Resultado de M5P" )
+
+###### Figura 12 Resultado de M5P ###### 
+
 
 En este ejemplo se ve la implementación de árboles de decisión utilizando el programa weka en donde la posibilidad de aplicar este modelo de predicción de algoritmo de árboles nos proporciona una visión más general del momento de clasificar un gran conjunto de datos y determinar las variantes más importantes en la toma de decisiones. El árbol es una técnica popular para la clasificación supervisada, especialmente cuando los resultados son interpretados por humanos. El árbol de decisión multivariante utiliza el concepto de correlación de atributos y proporciona la mejor manera de realizar condicional pruebas en comparación con el enfoque univariante. El estudio de investigación concluye que el enfoque multivariante es mucho mejor qué enfoque univariante mientras nos permite tratar con gran cantidad de datos.
 
@@ -338,35 +370,49 @@ En este ejemplo se ve la implementación de árboles de decisión utilizando el 
 
 Se construye la red neuronal de percepción multicapa de componentes simples. Al principio, lo haremos describir una sola neurona de entrada que luego será extendido a múltiples entradas. A continuación, ampliaremos estos neuronas juntas para producir capas [4]. Finalmente, las capas se conectan en cascada para formar la red.
 
-![Texto alternativo](/home/armando/Escritorio/15.jpg "Fig. 13: Red neuronal como aproximador de funciones" )
+![Texto alternativo](/home/armando/Escritorio/16.jpg "Fig. 13: Red neuronal como aproximador de funciones" )
+
+###### Fig. 13: Red neuronal como aproximador de funciones ###### 
+
 
 Neurona de entrada única: se muestra una neurona de entrada única en la Fig. 14. la entrada escalar p se multiplica por el escalar ponderar W para formar Wp, uno de los términos que se envía a el verano. La otra entrada, 1, se multiplica por un sesgo b y luego pasó al verano. La salida de verano a menudo referido como la entrada neta, entra en una transferencia función f que produce la salida de la neurona escalar a (a veces se utiliza "función de activación" en lugar de función de transferencia y desplazamiento en lugar de sesgo).
 
-![Texto alternativo](/home/armando/Escritorio/16.jpg "Fig. 14: neurona de entrada única " )
+![Texto alternativo](/home/armando/Escritorio/17.jpg "Fig. 14: neurona de entrada única " )
+
+
+###### Fig. 14: neurona de entrada única ###### 
 
 
 función de respuesta y desplazamiento en lugar de sesgo). De la Fig. 14, ambos w y b son ambos ajustables parámetros escalares de la neurona. Típicamente la transferencia la función es elegida por el diseñador y luego el los parámetros w y b serán ajustados por algún aprendizaje regla para que la relación de entrada / salida de neurona cumplir algún objetivo específico. La función de transferencia en
 La figura 14 puede ser una función lineal o no lineal de n. Una se elige una función de transferencia particular para satisfacer algunas especificación del problema de que la neurona es intentando resolver Uno de los más utilizados. funciones es la función de transferencia log-sigmoide, que es mostrado en la Fig. 15.
 
-![Texto alternativo](/home/armando/Escritorio/17.jpg "Fig. 15: Función de transferencia de log-sigmiod" )
+![Texto alternativo](/home/armando/Escritorio/18.jpg "Fig. 15: Función de transferencia de log-sigmiod" )
 
+
+###### Figura 15. Función de transferencia de log-sigmiod ###### 
 
 Neurona de entrada múltiple: por lo general, una neurona tiene más de una entrada, una neurona con entradas R se muestra en la  Fig. 16.
 
-![Texto alternativo](/home/armando/Escritorio/18.jpg "Fig. 16: neurona de entrada múltiple" )
+![Texto alternativo](/home/armando/Escritorio/19.jpg "Fig. 16: neurona de entrada múltiple" )
 
-![Texto alternativo](/home/armando/Escritorio/19.jpg "Fig. 17: Neurona con entradas R, anotaciones abreviadas" )
+
+###### Fig. 16: neurona de entrada múltiple ######
+
+![Texto alternativo](/home/armando/Escritorio/20.jpg "Fig. 17: Neurona con entradas R, anotaciones abreviadas" )
  
+
+ ###### 17. Neurona con entradas R, anotaciones abreviadas ###### 
+
  ponderado por los elementos correspondientes W1,1 W1,2,… .W1, R de la matriz de peso W. La neurona tiene un sesgo b, que se suma con el entradas de peso para formar la entrada neta n:
 
 
 **Esta expresión se puede escribir en forma de matriz como:**
  
- ![Texto alternativo](/home/armando/Escritorio/20.jpg  )
+ ![Texto alternativo](/home/armando/Escritorio/21.jpg  )
 
  Donde la matriz W para el caso de neurona individual tiene solo una fila. Ahora la salida de neuronas se puede escribir como:
 
-  ![Texto alternativo](/home/armando/Escritorio/21.jpg  )
+  ![Texto alternativo](/home/armando/Escritorio/22.jpg  )
 
 
 ## PERCEPTRON MULTILAYER
@@ -380,9 +426,14 @@ Una capa de neuronas: una red de una sola capa de S es se muestra en la Fig. 18.
 La capa incluye la matriz de peso, los veranos, el vector de sesgo b, los cuadros de función de transferencia y el vector de salida a. Cada elemento del vector de entrada p es conectado a cada neurona a través de la matriz de peso W.
 Cada neurona tiene un sesgo bi, un verano, una función de transferencia y una salida ai. En conjunto, las salidas forman el vector de salida a. Es común para la cantidad de entradas para que una capa sea diferente del número de neuronas (es decir, R ≠ S). Los elementos del vector de entrada ingresan a la red a través de la matriz de peso W:
 
-  ![Texto alternativo](/home/armando/Escritorio/22.jpg "Fig. 18: Capa de neuronas S" )
+  ![Texto alternativo](/home/armando/Escritorio/23.jpg "Fig. 18: Capa de neuronas S" )
 
-   ![Texto alternativo](/home/armando/Escritorio/23.jpg "Fig. 19: Capa de neuronas S, notación abreviada" )
+  ###### Fig. 18: Capa de neuronas S ###### 
+
+   ![Texto alternativo](/home/armando/Escritorio/24.jpg "Fig. 19: Capa de neuronas S, notación abreviada" )
+
+
+###### Fig. 19: Capa de neuronas S, notación abreviada ###### 
 
 Los índices de fila de los elementos de la matriz W indicar la neurona de destino asociada con eso peso, mientras que los índices de columna indican la fuente de la entrada para ese peso. Por lo tanto, los índices en W3,2 dicen que este peso representa la conexión con el tercero neurona de la segunda fuente. La neurona S, entrada R, la red de una capa también se puede dibujar en forma abreviada notación como se muestra en la Fig.19.
 
@@ -398,7 +449,9 @@ Como se muestra en la Fig. 20, hay entradas R, S1 neuronas en la primera capa, S
 
 Las redes neuronales MLP consisten en unidades dispuestas en capas. Cada capa está compuesta de nodos y en el red totalmente conectada considerada aquí cada nodo se conecta a cada nodo en las capas posteriores. Cada MLP está compuesto por un mínimo de tres capas que consta de una capa de entrada, una o más capas ocultas y una salida capa. La capa de entrada distribuye las entradas a capas posteriores. Los nodos de entrada tienen activación de línea funciones y sin umbrales. Cada nodo de unidad oculto y cada nodo de salida tiene umbrales asociados con ellos además de los pesos.
 
- ![Texto alternativo](/home/armando/Escritorio/24.jpg "Fig. 22: Red neuronal perceptrónica multicapa de tres capas típica" )
+ ![Texto alternativo](/home/armando/Escritorio/25.jpg "Fig. 22: Red neuronal perceptrónica multicapa de tres capas típica" )
+
+###### Fig. 22: Red neuronal perceptrónica multicapa de tres capas típic ######
 
 
 Los nodos de la unidad oculta tienen funciones de activación no lineales y las salidas tienen funciones de activación lineal. Por lo tanto, cada señal de alimentación en el ánodo en una capa posterior tiene la entrada original
@@ -431,13 +484,14 @@ En el desarrollo del proyecto se importaron las siguientes librerías para utili
 
 Primero importamos las librerias necesarias  para empezar a trabajar con los algoritmos
 
-![Texto alternativo](/home/armando/Escritorio/25.jpg )
+![Texto alternativo](/home/armando/Escritorio/26.jpg )
 
 Después se cargan todos los datos del dataset bank-full y posteriormente se realiza la limpieza, una vez cargado y realizado la limpieza los dato son convertidos de int a double.
 
-![Texto alternativo](/home/armando/Escritorio/26.jpg )
-
 ![Texto alternativo](/home/armando/Escritorio/27.jpg )
+
+
+![Texto alternativo](/home/armando/Escritorio/28.jpg )
 
 ## KMeans
 
@@ -471,11 +525,11 @@ Una vez creado las variables y el modelo se declara una variable llamada categor
 
  Para el algoritmo Multilayer Perceptron se importan las librerías siguientes:
 
- ![Texto alternativo](/home/armando/Escritorio/28.jpg )
+ ![Texto alternativo](/home/armando/Escritorio/29.jpg )
 
 Se declaran las siguientes variables para el uso del algoritmo, dentro de los principales están los de division prueba y entrenamiento, también se declara una variable  evaluador qué es el que nos muestra los datos del dataset con exactitud, y posteriormente se imprime el test de los datos de exactitud. 
 
- ![Texto alternativo](/home/armando/Escritorio/29.jpg )
+ ![Texto alternativo](/home/armando/Escritorio/30.jpg )
 
  ## Decision Tree 
 
@@ -537,6 +591,9 @@ En la tabla de resultados de multilayer perceptron nos muestra la predicción de
 ## Decision Tree 
 
 Resultados de predicción, etiqueta y características del algoritmo árboles de decisión
+
+![Texto alternativo](/home/armando/Escritorio/31.jpg )
+
 
 rmse(mide la la cantidad de error qué hay entre dos conjuntos de datos): Double = 1.9747637354826524  
 
