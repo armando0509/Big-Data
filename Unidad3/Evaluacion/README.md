@@ -1,7 +1,7 @@
 
 
 
-**Objetivo**: El objetivo de este examen es tratar de agrupar los clientes de regiones específicas de un distribuidor al mayoreo. Esto en base a las ventas de algunas categorías de productos. Las fuente de datos se encuentra en el repositorio: <https://github.com/jcromerohdz/BigData/blob/master/Spark_clustering/Whole sale customersdata.csv> 
+**Objetivo**: El objetivo de este examen es tratar de agrupar los clientes de regiones específicas de un distribuidor al mayoreo. Esto en base a las ventas de algunas categorías de productos. Las fuente de datos se encuentra en el repositorio: <https://github.com/jcromerohdz/BigData/blob/master/Spark_clustering/Wholesalecustomersdata.csv> 
 
 
 
