@@ -15,14 +15,17 @@ INGENIERÍA INFORMÁTICA
 **DATOS MASIVOS** BDD-1704 IF9A
 
 **UNIDAD POR EVALUAR:**
+
 Proyecto Final
 
 
 **NOMBRE DEL ALUMNO // NO. DE CONTROL**
+
 Ocegueda Meraz Armando # 14212337
 
 
 **NOMBRE DEL MAESTRO:**
+
 Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
 
 
@@ -91,5 +94,5 @@ O un conjunto de objetos Dn = (x1, x2..., xn), para todo el i, xi reales y k, ν
 
 
 **Etapa 4:** Repetir las etapas 2 y 3 hasta que no se hagan más reasignaciones. Aunque el algoritmo termina siempre, no se garantiza el obtener la soluci´on ´optima. En efecto, el algoritmo es muy sensible a la elección aleatoria de los K centros iniciales. Esta es la razón por la que, se utiliza el algoritmo del K-means numerosas veces sobre un mismo conjunto de datos para intentar minimizar este efecto, sabiendo que a centros iniciales lo más espaciados posibles dan mejores resultados.
+![Texto alternativo](/home/armando/Escritorio/1.jpg )
 
-![Texto alternativo](/home/armando/Escritorio/1.jpg "Figura 1 .representación gráfica de los clusters fijado con sus respectivos centroide.")
