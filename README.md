@@ -605,32 +605,13 @@ Root Mean Squared Error (RMSE) on test data = 1.9747637354826524
 
 **tabla de comparación**
 
-~~~
+
+![Texto alternativo](/home/armando/Escritorio/32.jpg )
 
 
-label
-balance
-predicción
-features
-KMeans
+![Texto alternativo](/home/armando/Escritorio/33.jpg )
 
-0
 
-76
-0
-0
-Multilayer Perceptron
-
-1
-0
-1
-0
-Decision Tree 
-1.6
-0
-0
-101
-~~~
 
 ## Conclusiones
 
