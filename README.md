@@ -138,6 +138,7 @@ Se agruparon 8 puntos de la figura en 3 clusters usando el algoritmo de las K me
 
 ![Texto alternativo](/home/armando/Escritorio/3.jpg "Figura 3 .representación gráfica de 8 puntos y 3 centroides..")
 
+###### Figura 3 .representación gráfica de 8 puntos y 3 centroides. ######
 
 A los resultados obtenidos con la distancia euclidiana le sacamos la raíz cuadrada y ese sera la distancia de cada punto.
 
