@@ -28,21 +28,37 @@ Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
 
 
 **Índice	2**
+
 **Introducción	3**
+
 **Marco teórico de los algoritmos	4**
+
 **Kmeans	4**
+
 **Decision Tree	10**
+
 **Multilayer Perceptron	19**
+
 **Implementación	27**
+
 **Por qué programar spark con scala?	28**
+
 **KMeans	30**
+
 **Multilayer Perceptron	31**
+
 **Decision Tree	32**
+
 **Resultados	33**
+
 **KMeans	33**
+
 **Multilayer Perceptron	34**
+
 **Decision Tree	34**
+
 **Conclusiones	35**
+
 **Referencias**
 
 
