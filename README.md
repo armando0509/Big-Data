@@ -1,7 +1,9 @@
 **INSTITUTO TECNOLÓGICO DE TIJUANA**
+
 **SUBDIRECCIÓN ACADÉMICA**
 
 DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
+
 SEMESTRE AGOSTO- DICIEMBRE 2019
 
 **CARRERA:**
@@ -25,30 +27,28 @@ Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
 
 
 
-####Índice	2
-####Introducción	3
-####Marco teórico de los algoritmos	4
-####Kmeans	4
-####Decision Tree	10
-####Multilayer Perceptron	19
-####Implementación	27
-####Por qué programar spark con scala?	28
-####KMeans	30
-####Multilayer Perceptron	31
-####Decision Tree	32
-####Resultados	33
-####KMeans	33
-####Multilayer Perceptron	34
-####Decision Tree	34
-####Conclusiones	35
-####Referencias
+**Índice	2**
+**Introducción	3**
+**Marco teórico de los algoritmos	4**
+**Kmeans	4**
+**Decision Tree	10**
+**Multilayer Perceptron	19**
+**Implementación	27**
+**Por qué programar spark con scala?	28**
+**KMeans	30**
+**Multilayer Perceptron	31**
+**Decision Tree	32**
+**Resultados	33**
+**KMeans	33**
+**Multilayer Perceptron	34**
+**Decision Tree	34**
+**Conclusiones	35**
+**Referencias**
 
 
 
 
-
-
- ##Introducción
+ ## Introducción
 
 
 En esta última unidad de la materia de datos masivos se creó un proyecto final  basado en los temas de machine learning vistos en clase durante el curso  utilizando el  lenguaje de programación  Scala, este lenguaje nos permite trabajar con diferentes modelos y estructuras de programación como orientado a objetos y nos permite utilizar diferentes funciones los cuales se pueden incorporar y realizar  algún modelo matemático, para el uso en este proyecto se utilizaron  3 diferentes tipos de algoritmos que se estudiaron durante el curso y los cuales se seleccionaron los siguientes y se  mencionan a continuación,  Kmeans, Decision Three y Multilayer Perceptron estos algoritmos  serán necesarios para realizar este proyecto junto con un dataset llamado Bank Marketing el cual este contendra la informacion necesaria para trabajar con los algoritmos. 
@@ -56,8 +56,8 @@ En esta última unidad de la materia de datos masivos se creó un proyecto final
  la finalidad de este trabajo  es el de poder   analizar a detalle los datos en forma estructurada y organizada y además de encontrar una solución más óptima al momento de tomar decisiones a corto y a largo plazo  en este caso en la vida real, en donde se requiere tener un perspectiva de los datos importante con ,los que se están trabajando  y la ayuda del lenguaje scala junto con la aplicación de estos algoritmos implementando las metodologías, funciones y operaciones en un ámbito en donde se tiene una  gran cantidad de información valiosa, nosotros podremos seleccionar, contar, establecer, convertir, agrupar,  eliminar, o incluso a predecir el comportamiento de los datos con los que estamos trabajando y al aplicar  algún algoritmo  matemático nos permitirá obtener mejores resultados y para encontrar una solución efectiva a un problema en general  en el cual el estudio detallado de una información almacenada en una gran base de datos es unda,ental para llevar a cabo una solución eficaz.
 
 
-##Marco teórico de los algoritmos
-###Kmeans
+## Marco teórico de los algoritmos
+### Kmeans
 
 El algoritmo K-means es el algoritmo de clustering más conocido y utilizado ya que es de muy simple aplicaci´on y eficaz. Sigue un procedimiento simple de clasificaci´on de un conjunto de objetos en un determinado n´umero K de clusters, K determinado a priori. 
 
