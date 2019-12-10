@@ -50,6 +50,6 @@ Muestra de datos()
                 precision: Doble = 0.9642857142857143
                 Error de prueba = 0.0357142857142857 // el error de prediccion es muy bajo por lo que se puede decir que la prediccion que el algoritmo hace es muy buena.
 
-## Autores: Ocegueda Meraz Armando # 14212337
+**Autores:** Ocegueda Meraz Armando # 14212337
 
-## Tema: One-vs-Rest
+**Tema:** One-vs-Rest
