@@ -1,9 +1,9 @@
+![Texto alternativo](/home/armando/Escritorio/01.jpg )
 ~~~
-![Texto alternativo](/home/armando/Escritorio/01.jpg)    
              
                   INSTITUTO TECNOLÓGICO DE TIJUANA 
 
-                        SUBDIRECCIÓN ACADÉMICA**
+                        SUBDIRECCIÓN ACADÉMICA
 
                 DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
 
@@ -15,14 +15,14 @@
 
                             MATERIA Y SERIE: 
 
-                      DATOS MASIVOS** BDD-1704 IF9A
+                      DATOS MASIVOS BDD-1704 IF9A
 
-                         **UNIDAD POR EVALUAR:**
+                           UNIDAD POR EVALUAR:
 
                              Proyecto Final
 
 
-                    NOMBRE DEL ALUMNO // NO. DE CONTROL**
+                    NOMBRE DEL ALUMNO // NO. DE CONTROL
 
                       Ocegueda Meraz Armando # 14212337
 
