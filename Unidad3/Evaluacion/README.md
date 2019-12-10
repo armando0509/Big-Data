@@ -89,7 +89,7 @@ println("Cluster Centers: ")
 model.clusterCenters.foreach(println)
 
 
-println("Channel,Region,Fresh,Milk,Grocery,Frozen,Detergents_Paper,Delicassen") 
+`println("Channel,Region,Fresh,Milk,Grocery,Frozen,Detergents_Paper,Delicassen") `
 
 
 <b><br>  Ocegueda Meraz Armando # 14212337     KMeans </b> </br>  
