@@ -128,7 +128,7 @@ println(metrics.confusionMatrix)
 
 
 
-##RESULTADOS
+RESULTADOS
 
 scala> :load PracticaLogisticRegression.scalaLoading PracticaLogisticRegression.scala...
 import org.apache.spark.ml.classification.LogisticRegression
