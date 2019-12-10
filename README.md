@@ -1,34 +1,35 @@
-**INSTITUTO TECNOLÓGICO DE TIJUANA**
+~~~
+                **INSTITUTO TECNOLÓGICO DE TIJUANA**
 
-**SUBDIRECCIÓN ACADÉMICA**
+                      **SUBDIRECCIÓN ACADÉMICA**
 
-DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
+                DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
 
-SEMESTRE AGOSTO- DICIEMBRE 2019
+                      SEMESTRE AGOSTO- DICIEMBRE 2019
 
-**CARRERA:**
+                              **CARRERA:**
 
-INGENIERÍA INFORMÁTICA
+                         INGENIERÍA INFORMÁTICA
 
-**MATERIA Y SERIE:**
+                          **MATERIA Y SERIE:**
 
-**DATOS MASIVOS** BDD-1704 IF9A
+                    **DATOS MASIVOS** BDD-1704 IF9A
 
-**UNIDAD POR EVALUAR:**
+                         **UNIDAD POR EVALUAR:**
 
-Proyecto Final
-
-
-**NOMBRE DEL ALUMNO // NO. DE CONTROL**
-
-Ocegueda Meraz Armando # 14212337
+                             Proyecto Final
 
 
-**NOMBRE DEL MAESTRO:**
+                  **NOMBRE DEL ALUMNO // NO. DE CONTROL**
 
-Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
+                      Ocegueda Meraz Armando # 14212337
 
 
+                            **NOMBRE DEL MAESTRO:**
+
+                     Dr. JOSE CHRISTIAN ROMERO HERNANDEZ
+
+~~~
 
 **Índice	2**
 
