@@ -1,5 +1,5 @@
 ~~~
-![Texto alternativo](/home/armando/Escritorio/01.jpg )    
+![Texto alternativo](/home/armando/Escritorio/01.jpg)    
              
                   INSTITUTO TECNOLÓGICO DE TIJUANA 
 
