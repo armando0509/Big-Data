@@ -101,10 +101,7 @@ O un conjunto de objetos Dn = (x1, x2..., xn), para todo el i, xi reales y k, ν
 ###### Figura 2 .representación gráfica con 3 grupos de clusters fijado con 3 centroides. ######
 
 
-
-
-
-**Complejidad**
+### Complejidad
 
 **n =** número de puntos,
 
