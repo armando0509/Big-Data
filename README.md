@@ -97,8 +97,8 @@ O un conjunto de objetos Dn = (x1, x2..., xn), para todo el i, xi reales y k, ν
 
 
 ![Texto alternativo](/home/armando/Escritorio/1.jpg "Figura 2 .representación gráfica con 3 grupos de clusters fijado con 3 centroides.")
+ ###### Figura 2 .representación gráfica con 3 grupos de clusters fijado con 3 centroides. ######
 
- Figura 2 .representación gráfica con 3 grupos de clusters fijado con 3 centroides. 
 
 **Complejidad**
 
