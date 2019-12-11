@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Unidad3
 //Examen Unidda 3 Datos Masivos Ocegueda Meraz Armando # 14212337
 // Instrucciones
 //Desarrolle las siguientes instrucciones en Spark con el lenguaje de programación Scala.
@@ -28,7 +31,11 @@ import org.apache.spark.ml.clustering.KMeans
 
 //5. Carga el dataset de Wholesale Customers Data
 
+<<<<<<< HEAD
 val dataset = spark.read.option("header","true").option("inferSchema","true").csv("/home/armando/Escritorio/Datos Masivos/Unidad3/Evaluacion/Wholesale_customers_data.csv")
+=======
+val dataset = spark.read.option("header","true").option("inferSchema","true").csv("/home/armando/Escritorio/Datos Masivos/Unidad3/Evaluacion/Wholesalecustomersdata.csv")
+>>>>>>> origin/Unidad3
 //6. Seleccione las siguientes columnas: Fres, Milk, Grocery, Frozen, Detergents_Paper, Delicassen y llamar a este conjunto feature_data
 val feature_data = dataset.select($"Fresh", $"Milk", $"Grocery", $"Frozen", $"Detergents_Paper", $"Delicassen")
 
